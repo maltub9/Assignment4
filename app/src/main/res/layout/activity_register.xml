@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="198dp"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/walmart" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name*"
+            android:layout_marginLeft="60px"/>
+
+        <EditText
+            android:id="@+id/firtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="50px"
+
+            />
+
+        <TextView
+            android:id="@+id/textViewx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Name*"
+            android:layout_marginLeft="60px"/>
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="50px" />
+
+        <TextView
+            android:id="@+id/textViewxx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Name *"
+            android:layout_marginLeft="60px"/>
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="50px" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password*"
+            android:layout_marginLeft="60px"/>
+
+        <EditText
+            android:id="@+id/passWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_marginLeft="50px" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+        <Button
+            android:id="@+id/create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            app:backgroundTint="@color/sign_in"
+            />
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Required"
+            android:layout_marginRight="60px"
+            android:textAlignment="textEnd"
+            android:textColor="@color/purple_500"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
