@@ -1,5 +1,6 @@
 package com.example.assignment4
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
@@ -39,18 +40,30 @@ class ShoppingCategory : AppCompatActivity() {
 
         group1.setOnClickListener{
             Toast.makeText(this, "Electronics selected", Toast.LENGTH_SHORT).show()
+            var intent = Intent(this,products_list::class.java)
+            intent.putExtra("category","clothes")
+            startActivity(intent)
         }
 
         group2.setOnClickListener{
             Toast.makeText(this, "Clothing selected", Toast.LENGTH_SHORT).show()
+            var intent = Intent(this,products_list::class.java)
+            intent.putExtra("category","clothes")
+            startActivity(intent)
         }
 
         group3.setOnClickListener{
             Toast.makeText(this, "Beauty selected", Toast.LENGTH_SHORT).show()
+            var intent = Intent(this,products_list::class.java)
+            intent.putExtra("category","clothes")
+            startActivity(intent)
         }
 
         group4.setOnClickListener{
             Toast.makeText(this, "Food selected", Toast.LENGTH_SHORT).show()
+            var intent = Intent(this,products_list::class.java)
+            intent.putExtra("category","clothes")
+            startActivity(intent)
         }
     }
 }
