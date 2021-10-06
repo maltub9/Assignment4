@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment4">
         <activity
+            android:name=".productDetail"
+            android:exported="true" />
+        <activity
             android:name=".products_list"
             android:exported="true" />
         <activity

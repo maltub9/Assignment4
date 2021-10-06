@@ -41,7 +41,7 @@ class ShoppingCategory : AppCompatActivity() {
         group1.setOnClickListener{
             Toast.makeText(this, "Electronics selected", Toast.LENGTH_SHORT).show()
             var intent = Intent(this,products_list::class.java)
-            intent.putExtra("category","clothes")
+            intent.putExtra("category","electronics")
             startActivity(intent)
         }
 
