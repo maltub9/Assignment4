@@ -5,9 +5,12 @@
       <map>
         <entry key="..\:/Users/maltu/AndroidStudioProjects/Assignment4/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/maltu/AndroidStudioProjects/Assignment4/app/src/main/res/layout/activity_product_detail.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/maltu/AndroidStudioProjects/Assignment4/app/src/main/res/layout/activity_products_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/maltu/AndroidStudioProjects/Assignment4/app/src/main/res/layout/activity_product_list.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/maltu/AndroidStudioProjects/Assignment4/app/src/main/res/layout/activity_products_list.xml" value="0.2" />
         <entry key="..\:/Users/maltu/AndroidStudioProjects/Assignment4/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/maltu/AndroidStudioProjects/Assignment4/app/src/main/res/layout/activity_shopping_category.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/maltu/AndroidStudioProjects/Assignment4/app/src/main/res/layout/card_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/maltu/AndroidStudioProjects/Assignment4/app/src/main/res/layout/product_item.xml" value="0.4" />
         <entry key="..\:/Users/maltu/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_list_item_1.xml" value="0.20260416666666667" />
       </map>
     </option>

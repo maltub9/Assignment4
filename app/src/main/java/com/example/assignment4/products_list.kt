@@ -3,10 +3,11 @@ package com.example.assignment4
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.*
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import org.w3c.dom.Text
+import android.view.View as View1
 
 class products_list : AppCompatActivity() {
 
@@ -14,7 +15,7 @@ class products_list : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_products_list)
+        setContentView(R.layout.activity_product_list)
 
         var listView: ListView= ListView(this)
         var recycler:RecyclerView= RecyclerView(this)
@@ -22,24 +23,20 @@ class products_list : AppCompatActivity() {
         var container = findViewById<LinearLayout>(R.id.listContainer)
 
         Toast.makeText(this, intent.getStringExtra("category"), Toast.LENGTH_SHORT).show()
-        var samples:productsSample= productsSample()
 
-        var productsList=samples.getProducts()
 
         if(intent.getStringExtra("category")=="electronics")
         {
+            var layoutManager:RecyclerView.LayoutManager?= LinearLayoutManager(this)
+            var adapter:RecyclerView.Adapter<ProductsAdapter.ViewHolder>?=null
 
-            var cards = mutableListOf<View>()
+            var rView:RecyclerView= RecyclerView(this)
+            rView.layoutManager=layoutManager
 
-            for (i in 0 until productsList.size) {
-                val product = productsList[i]
-                cards.add(createCard(product))
-            }
+            adapter=ProductsAdapter()
+            rView.adapter=adapter
 
-            val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, cards)
-            //recycler.adapter = adapter
-
-
+            container.addView(rView)
         }
         else
         {
@@ -66,42 +63,5 @@ class products_list : AppCompatActivity() {
 
     }
 
-    private fun createCard(product: Product): View {
-        var layout:LinearLayout= LinearLayout(this)
-        var layoutContent:LinearLayout= LinearLayout(this)
-        layout.orientation=LinearLayout.HORIZONTAL
-        layoutContent.orientation=LinearLayout.VERTICAL
 
-        var image:ImageView= ImageView(this)
-        var titleView:TextView= TextView(this)
-        var priceView:TextView=TextView(this)
-        var colorView:TextView=TextView(this)
-
-        when(product.image){
-            "p1"->{
-                image.setImageResource(R.drawable.p1)
-            }
-            "p2"->{
-                image.setImageResource(R.drawable.p2)
-            }
-            "p3"->{
-                image.setImageResource(R.drawable.p3)
-            }
-            "p4"->{
-                image.setImageResource(R.drawable.p4)
-            }
-        }
-        titleView.text=product.Title
-        priceView.text=product.Price.toString()
-        colorView.text=product.color
-
-        layoutContent.addView(titleView)
-        layoutContent.addView(priceView)
-        layoutContent.addView(colorView)
-
-        layout.addView(image)
-        layout.addView(layoutContent)
-
-        return  layout
-    }
 }

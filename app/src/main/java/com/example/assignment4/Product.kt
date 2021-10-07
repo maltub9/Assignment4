@@ -4,7 +4,7 @@ class Product {
     var Title:String
     var Price:Double
     var color:String
-    var image:String
+    var image:Int
     var itemID:Int
     var Description:String
 
@@ -12,7 +12,7 @@ class Product {
         Title: String,
         Price: Double,
         color: String,
-        image: String,
+        image: Int,
         itemID: Int,
         Description: String
     ) {
